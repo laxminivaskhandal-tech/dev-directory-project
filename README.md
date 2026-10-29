@@ -1,18 +1,25 @@
 # DevDirectory
 
-A professional developer discovery directory built with React, TypeScript, and Vite. Browse developer profiles, search by name or skill, and explore collaboration details.
+A React and TypeScript developer discovery demo built with Vite. It brings profile discovery, shortlist tools, and project planning into one responsive interface.
 
-## Download the project
+## Features
 
-Get the complete source from the [latest release](https://github.com/laxminivaskhandal-tech/dev-directory-project/releases) as `DevDirectory-project.zip`.
+- Search and filter developer profiles by skill and availability.
+- View profile details and sample portfolio information.
+- Save profiles to a shortlist.
+- Draft project briefs and explore a hiring workspace and activity inbox.
+- Responsive layouts, clear empty states, and lightweight motion.
 
 ## Run locally
 
-1. Extract the ZIP archive.
-2. Install dependencies with `npm install`.
-3. Start the development server with `npm run dev`.
-4. Create a production build with `npm run build`.
+1. Install dependencies: `npm install`
+2. Start the development server: `npm run dev`
+3. Create a production build: `npm run build`
 
-## Demo notes
+## Supabase setup
 
-The included profiles and authentication interface are for demonstration. Persistent profiles and real sign-in require configuring Supabase; see `.env.example` and the setup notes in the source README.
+The SQL schema is in `supabase/schema.sql`, and `.env.example` shows the required public Vite environment variable names. The current authentication and profile flows are demo UI; real sessions and persistent data require connecting a Supabase client and enabling the database queries. Never expose a Supabase service-role key in browser code.
+
+## Demo data
+
+The developer profiles and activity are sample data for previewing the interface. Connection actions and project briefs are not backed by a production service yet.
